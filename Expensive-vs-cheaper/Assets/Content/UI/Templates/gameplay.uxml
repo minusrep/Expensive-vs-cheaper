@@ -2,14 +2,12 @@
     <Style src="project://database/Assets/Content/UI/Styles/core.uss?fileID=7433441132597879392&amp;guid=85897d362b8a26b41bd9c71446df5c35&amp;type=3#core"/>
     <ui:VisualElement name="root" style="flex-grow: 1; background-color: rgb(64, 209, 251);">
         <ui:VisualElement name="content" style="flex-grow: 1; flex-direction: row;">
-            <ui:VisualElement class="item" style="flex-grow: 1;"/>
-            <ui:VisualElement class="item" style="flex-grow: 1; background-color: rgb(186, 186, 186);"/>
+            <ui:VisualElement name="item" class="item" style="flex-grow: 0; translate: 0% 0; position: absolute; left: -50%;"/>
         </ui:VisualElement>
         <ui:VisualElement name="buttons" style="flex-grow: 1; position: absolute; width: 100%; height: 100%;">
             <ui:VisualElement name="content" style="flex-grow: 1; width: 50%; height: 100%; left: 50%; justify-content: center;">
-                <ui:Button text="Button" name="down"/>
-                <ui:Button text="Button" name="up"/>
-                <ui:Button text="Button" name="skip"/>
+                <ui:Button text="More Expensive" name="more-expensive-button"/>
+                <ui:Button text="Cheaper" name="cheaper-button"/>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
