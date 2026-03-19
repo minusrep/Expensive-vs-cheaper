@@ -8,7 +8,7 @@ namespace DoubleB.Runtime
 
         private readonly GameModel _model;
         
-        public MainMenuPresenter(MainMenuView view, GameModel model)
+        public MainMenuPresenter(GameModel model, MainMenuView view)
         {
             _view = view;
             _model = model;

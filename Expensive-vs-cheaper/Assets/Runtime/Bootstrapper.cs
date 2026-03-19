@@ -1,3 +1,6 @@
+using System.Linq;
+using DoubleB.Runtime.Gameplay;
+using DoubleB.Runtime.Runtime.Descriptions;
 using DoubleB.Runtime.Runtime.ViewDescriptions;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -8,15 +11,15 @@ namespace DoubleB.Runtime
     public class Bootstrapper : MonoBehaviour
     {
         [SerializeField] private UIDocument _uiDocument;
-        [FormerlySerializedAs("visualTreeAssetCollection")] [FormerlySerializedAs("_visualTreeAssetViewDescriptionCollection")] [SerializeField] private UIAssetCollection uiAssetCollection;
-        
+        [SerializeField] private UIAssetCollection _uiAssetCollection;
+        [SerializeField] private ItemDescriptionCollection _itemDescriptionCollection;
         
         private void Start()
         {
             var uiRouterModel = new UIRouterModel(UIConstants.MainMenu);
             var gameModel = new GameModel(uiRouterModel);
             var gameView = new GameView(_uiDocument);
-            var uiRouter = new UIRouterPresenter(gameModel, gameView, uiAssetCollection);
+            var uiRouter = new UIRouterPresenter(gameModel, gameView,  _uiAssetCollection, _itemDescriptionCollection);
             uiRouter.Enable();
         }
     }
