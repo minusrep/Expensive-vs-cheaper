@@ -6,5 +6,9 @@ namespace DoubleB.Runtime
         public const string Gameplay = "gameplay";
         public const string Root = "root";
         public const string StartButton = "start-button";
+        public const string MoreExpensiveButton = "more-expensive-button";
+        public const string CheaperButton = "cheaper-button";
+        public const string Item = "item";
+        public const string Content = "content";
     }
 }
