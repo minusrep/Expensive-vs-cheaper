@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace DoubleB.Runtime.Runtime.ViewDescriptions
 {
-    public class ViewDescriptionCollection<TDescription, TElement> : ScriptableObject where TDescription : ViewDescription<TElement> 
+    public class ViewDescriptionCollection<TDescription, TElement> : ScriptableObject where TDescription : ViewDescription<TElement>
     {
-        [field: SerializeField] public List<TDescription> ViewDescriptions { get; private set; }
+        [field: SerializeField] private List<TDescription> _viewDescriptions;
 
         public TDescription Get(string id)
         {
-            foreach (var viewDescription in ViewDescriptions)
+            foreach (var viewDescription in _viewDescriptions)
             {
                 if (viewDescription.Id == id)
                 {

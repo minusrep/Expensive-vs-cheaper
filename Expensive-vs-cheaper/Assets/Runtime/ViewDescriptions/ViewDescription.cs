@@ -5,6 +5,6 @@ namespace DoubleB.Runtime.Runtime.ViewDescriptions
     public abstract class ViewDescription<T> : ScriptableObject
     {
         public string Id;
-        public T Element;
+        public T Value;
     }
 }
