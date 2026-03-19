@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Content/UI/Styles/core.uss?fileID=7433441132597879392&amp;guid=85897d362b8a26b41bd9c71446df5c35&amp;type=3#core"/>
+    <ui:VisualElement name="item" class="item" style="flex-grow: 0; translate: 0% 0; position: absolute; left: -50%;"/>
+</ui:UXML>
